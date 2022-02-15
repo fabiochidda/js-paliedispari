@@ -30,3 +30,17 @@ function numberSum (inputNumber, generatedNumber) {
 
 console.log(numberSum(userInputNumber, randomNumbers))
 
+const finalResult = (numberSum(userInputNumber, randomNumbers))
+
+if (userInputEvenOdd == "Pari" && finalResult % 2 == 0) {
+
+    alert("Hai vinto")
+
+} else if (userInputEvenOdd == "Dispari" && finalResult % 2 !== 0) {
+
+    alert("Hai vinto")
+
+} else {
+
+    alert("Hai perso")
+}
