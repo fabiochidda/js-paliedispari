@@ -1,7 +1,7 @@
 let userInputEvenOdd = prompt("Scegli Pari o Dispari");
 console.log(userInputEvenOdd);
 
-let userInputNumber = prompt("Scegli un numero da 1 a 5");
+let userInputNumber = parseInt(prompt("Scegli un numero da 1 a 5"));
 console.log(userInputNumber);
 
 if (userInputNumber > 5) {
@@ -18,4 +18,15 @@ function randomNumber(min, max) {
 
 }
 
-console.log(randomNumber(1, 5))
+const randomNumbers = randomNumber(1, 5)
+console.log(randomNumbers)
+
+function numberSum (inputNumber, generatedNumber) {
+
+    const numberSum = inputNumber + generatedNumber;
+    return numberSum;
+
+}
+
+console.log(numberSum(userInputNumber, randomNumbers))
+
